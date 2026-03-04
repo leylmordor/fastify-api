@@ -180,7 +180,7 @@ interface ISignupBody {
   posts: Prisma.PostCreateInput[]
 }
 
-app.listen({ port: 3000 }, (err) => {
+app.listen({ host: '0.0.0.0', port: 3000 }, (err) => {
   if (err) {
     console.error(err)
     process.exit(1)
